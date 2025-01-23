@@ -1,0 +1,34 @@
+// A. Love Story
+// https://codeforces.com/problemset/problem/1829/A
+
+#include <bits/stdc++.h>
+using namespace std;
+
+int main()
+{
+    int t;
+    cin >> t;
+
+    while(t--)
+    {
+        string a = "codeforces";
+        string s;
+        cin >> s;
+
+
+        int count = 0;
+        for(int i = 0; i < a.size(); i++)
+        {
+
+            if(a[i] != s[i])
+            {
+                count++;
+            }
+        }
+
+        cout << count;
+    }
+
+
+    return 0;
+}
